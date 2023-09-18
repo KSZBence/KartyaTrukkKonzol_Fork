@@ -1,8 +1,11 @@
 
 package kartyatrukkkonzolon;
 
+import java.util.Scanner;
+
 public class Pakli {
     private Lap[] pakli = new Lap[22];
+    private static final Scanner sc = new Scanner(System.in);
 
     public Pakli() {
         
