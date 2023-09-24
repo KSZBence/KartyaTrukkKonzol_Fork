@@ -8,7 +8,7 @@ public class Pakli {
     private static final Scanner sc = new Scanner(System.in);
 
     public Pakli() {
-        
+        feltolt();
     }
     
     public void feltolt(){
