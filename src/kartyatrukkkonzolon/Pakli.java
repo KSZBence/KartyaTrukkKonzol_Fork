@@ -24,7 +24,7 @@ public class Pakli {
     
     public void kirak(){
         for (int i = 1; i < pakli.length; i++) {
-            System.out.printf("%-8s", pakli[i]);
+            System.out.printf("%-8s", pakli[i].getLeiras());
             if (i % 3 == 0) {
                 System.out.println("");
             }
@@ -60,7 +60,7 @@ public class Pakli {
     }
     
     public void ezVolt(){
-        System.out.println("A választott lap: " + pakli[11]);
+        System.out.println("A választott lap: " + pakli[11].getLeiras());
     }
     
 }
