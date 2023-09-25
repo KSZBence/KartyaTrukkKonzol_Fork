@@ -2,9 +2,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package kartyatrukkkonzolon;
+package nezet;
 
 import java.util.Scanner;
+import modell.Pakli;
 
 public class Kartyatrukk {
     private Pakli pakli;
@@ -13,20 +14,17 @@ public class Kartyatrukk {
 
     public Kartyatrukk() {
         this.pakli = new Pakli();
-    }
-    
-    public static void main(String[] args) {
-        new Kartyatrukk().indit();
+        indit();
     }
     
     public void indit() {
         for (int i = 0; i < 3; i++) {
-            this.pakli.kirak();
+            System.out.println(this.pakli.kirak());;
             int oszlop = melyik();
             this.pakli.kever(oszlop);
         }
         
-        this.pakli.ezVolt();   
+        System.out.println(this.pakli.ezVolt());;   
     }
     
     public int melyik() {

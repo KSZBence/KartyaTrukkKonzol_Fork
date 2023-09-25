@@ -1,5 +1,5 @@
 
-package kartyatrukkkonzolon;
+package modell;
 
 import java.util.Scanner;
 
@@ -22,13 +22,15 @@ public class Pakli {
         }
     }
     
-    public void kirak(){
+    public String kirak(){
+        String kirakas = "";
         for (int i = 1; i < pakli.length; i++) {
-            System.out.printf("%-8s", pakli[i].getLeiras());
+            kirakas += "%-8s".formatted( pakli[i].getLeiras());
             if (i % 3 == 0) {
-                System.out.println("");
+                kirakas += "\n";
             }
         }
+        return kirakas;
     }
     
     public void kever(int oszlop){
@@ -59,8 +61,8 @@ public class Pakli {
         this.pakli = ujPakli;
     }
     
-    public void ezVolt(){
-        System.out.println("A választott lap: " + pakli[11].getLeiras());
+    public String ezVolt(){
+        return "A választott lap: %s".formatted(pakli[11].getLeiras()) ;
     }
     
 }
